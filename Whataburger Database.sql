@@ -67,6 +67,10 @@ ALTER TABLE Stores ADD Street varchar(50);
 -- ALter --
 ALTER TABLE Menu ALTER COLUMN ItemName varchar(50);
 
+ALTER TABLE Orders ALTER COLUMN TotalAmount numeric(10,2);
+ALTER TABLE OrderDetails ALTER COLUMN LinePrice numeric (10,2);
+ALTER TABLE Menu ALTER COLUMN Price numeric(10,2);
+
 -- Add info to Stores --
 INSERT INTO Stores (StoreID, StoreName, State, City, ZipCode, Street) VALUES
 (10001, 'Whataburger #115', 'Alabama', 'Chickasaw', '36611', '100 North Craft Highway'),
